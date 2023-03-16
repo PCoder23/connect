@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SearchUserActivity"
+    android:orientation="vertical"
+    android:background="#F4E2A9"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/msg_box_background"
+            android:imeOptions="actionSearch"
+            android:imeActionLabel="Search users"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="italic"
+            android:layout_toLeftOf="@id/sBtn"
+            android:hint="Search users"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="#E1DCDC"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/usersRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

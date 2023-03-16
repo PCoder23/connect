@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:id="@+id/MsgLayout"
+    android:padding="10dp"
+    >
+<!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--        android:id="@+id/leftMessageLayout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="left"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@drawable/left_message_background"-->
+<!--        >-->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Msg"
+            android:textSize="20dp"
+            android:text="Dummy Message"
+            android:padding="10dp"
+            android:textColor="@color/black"/>
+
+<!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+<!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+<!--        android:layout_width="wrap_content"-->
+<!--    android:id="@+id/rightMessageLayout"-->
+<!--    android:layout_margin="5dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="right"-->
+<!--    android:gravity="right"-->
+<!--    android:padding="10dp"-->
+<!--        android:orientation="vertical"-->
+<!--    android:background="@drawable/right_message_background"-->
+<!--        >-->
+<!--        <com.google.android.material.textview.MaterialTextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/rightMsg"-->
+<!--            android:layout_gravity="right"-->
+<!--            android:gravity="right"-->
+<!--            android:textSize="20dp"-->
+<!--            android:text="Dummy Message"-->
+<!--            android:textColor="@color/black"/>-->
+
+<!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

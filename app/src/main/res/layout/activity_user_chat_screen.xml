@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UserChatScreenActivity"
+    android:orientation="vertical"
+    android:background="#F4E2A9"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_sub_primary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/baseline_person_24"
+                android:background="@drawable/profile_pic_background"
+                android:id="@+id/img"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="30dp"
+                android:layout_marginBottom="4dp"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:id="@+id/name"
+                />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+        android:background="#F4E2A9"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/editRelative"
+            android:background="#F4E2A9"
+            android:id="@+id/messagesRecycler"
+            tools:listitem="@layout/messages_item_view_recycler"
+            />
+        <RelativeLayout
+            android:id="@+id/editRelative"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/msgBox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/msgBox"
+                android:hint="Message"
+                android:ems="11"
+                android:textColorHint="@color/black"
+                android:maxLines="2"
+                android:padding="10dp"
+                android:textSize="20dp"
+                android:background="@drawable/msg_box_background"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:padding="5dp"
+                android:background="@drawable/msg_box_background"
+                android:textSize="20dp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/sendBtn"
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

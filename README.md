@@ -1,8 +1,7 @@
 # connect
 <h3>App Images: </h3>
 
-<img src="[https://user-images.githubusercontent.com/85278795/225932145-ba1690f1-13a1-4554-8e8f-cc9a83a59935.jpeg)" width="300px">
-![img|320x271](https://user-images.githubusercontent.com/85278795/225932145-ba1690f1-13a1-4554-8e8f-cc9a83a59935.jpeg)
+<img src="https://user-images.githubusercontent.com/85278795/225932145-ba1690f1-13a1-4554-8e8f-cc9a83a59935.jpeg" width="300px">
 
 ![WhatsApp Image 2023-03-17 at 18 40 17 (1)](https://user-images.githubusercontent.com/85278795/225932241-00288ba5-71fe-41aa-9714-18198b689da7.jpeg | width=100px)
 
